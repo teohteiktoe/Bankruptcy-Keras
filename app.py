@@ -1,20 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[14]:
-
-
 from flask import Flask
-
-
-# In[15]:
-
-
 app = Flask(__name__)
-
-
-# In[16]:
-
 
 from flask import request, render_template
 from keras.models import load_model 
@@ -35,15 +20,8 @@ def index():
     else:
         return(render_template("index.html", result="2"))
 
-
-# In[ ]:
-
-
 if __name__ == "__main__":
     app.run()
-
-
-# In[ ]:
 
 
 
