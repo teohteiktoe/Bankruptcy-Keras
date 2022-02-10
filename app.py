@@ -14,8 +14,10 @@ def index():
         model = load_model("BKR")
         pred = model.predict([[float(NPTA), float(TLTA), float(WCTA)]])
         print(pred)
-        pred = pred[0][0]
-        s = "The predicted bankruptcy score is : " + str(pred)
+        try:
+            s = "Our predict DBS price is : " + str(pred[0][0])
+        except:
+            s = "Something went wrong in prediction"
         return(render_template("index.html", result=s))
     else:
         return(render_template("index.html", result="2"))
