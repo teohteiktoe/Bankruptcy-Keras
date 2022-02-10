@@ -12,12 +12,11 @@ scipy==1.8.0
 sklearn==0.0
 threadpoolctl==3.1.0
 Werkzeug==2.0.3
-keras==
+keras==2.8.0
 tensorboard==2.8.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 tensorflow-io-gcs-filesystem==0.24.0
 termcolor==1.1.0
 tf-estimator-nightly==2.8.0.dev2021122109
-keras==2.8.0
 Keras-Preprocessing==1.1.2
